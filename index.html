@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo Assignment</title>
+    <style>
+        }
+        .div1{
+            color: rgb(47, 64, 80)
+        }
+        .helvetica{
+            font-family: Helvetica
+        }
+        #addTodo{
+            background-color: grey;
+            border: 2px solid gold;
+            color:black;
+            padding: 5px;
+        }
+        input::placeholder {
+            color:white;
+            font-size: medium;
+            opacity: .4;
+        }
+        button{
+            padding: 3px, 7px, 3px, 7px;
+            cursor: pointer;
+            background-color: burlywood;
+            border-block-color: grey;
+        }
+        hr{ 
+            opacity: .3;
+        }
+        ul{
+            list-style-type: none;     
+        }
+        li{
+            height: 15%;
+            float: right;
+        }    
+        li a{
+            color: rgb(47, 64, 80);
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        #colour{
+            padding: 0px;
+            background-color: coral;
+        }
+        #row{
+            box-sizing: border-box;
+            /* column-count: 2; */
+        }
+        .column {
+            float: left;
+            width: 35%;
+            padding: 10px;
+            height: 250px;
+        } 
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }   
+    </style>  
+</head>
+    <body style="background-color: antiquewhite; padding-bottom: 0%; margin-bottom: 0%">
+        <section style="padding-top: 0%; margin-top: 0%">
+            <section id="colour">
+
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#monthlyactivities">Monthly Activities</a></li>
+                    <li><a href="#dailyactivities">Daily Activities</a></li>
+                    <li><a href="#home">Home</a></li>
+                </ul>
+                <div class="div1" style="text-align: left;" class="helvetica">
+                        <p style="font-size: 150%;">
+                                EVERDON FX TRADING  
+                        </p>
+                </div>
+                    <hr color="black"/>
+            </section>
+                
+                <div style="color:rgb(44, 0, 0); background-color: chocolate;">
+                    <span style="font-size: 250%;">
+                        <p style="text-align: center;">Activities Check</p>
+                    </span>
+                        <p id="ifInvalidInput"></p>
+                        <br>
+                        <input type="text" id="addTodo" placeholder="Insert transaction">
+                        <button type="button" onclick="getNewTodo()">Submit</button>
+                </div>
+        
+                <div class="row">
+                    <div class="column" style="background-color: cornsilk;">
+                        <h1>List of Todos</h1>
+                            <div>
+                                <p id="editSuccess"></p>
+                                <div id="displayTodoList">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="column" style="background-color: cornflowerblue;">
+                            <h1>Done Todos</h1>
+                                <div id="displayDoneTodoList">
+                                </div>
+                    </div>
+                </div>
+            
+              
+        
+        
+                            
+                    <!-- </div> -->
+                <!-- </div> -->
+        </section>
+        <script src="index.js"></script>    
+    </body>
+</html>
